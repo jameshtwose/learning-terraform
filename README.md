@@ -9,7 +9,7 @@ A repo of my attempts at learning terraform (starting with Docker).
 - `terraform -install-autocomplete` install autocomplete (if necessary)
 - if using VSCode, install the [Terraform extension](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
 
-## Setup Docker
+## Setup and run Docker
 - `open -a Docker` open Docker
 - `mkdir learn-terraform-docker-container` create a directory for the container
 - `cd learn-terraform-docker-container` change into the directory
@@ -23,4 +23,14 @@ A repo of my attempts at learning terraform (starting with Docker).
 - `terraform validate` validate the plan
 - `terraform graph | dot -Tsvg > graph.svg` graph the plan (requires [Graphviz](https://graphviz.org/download/))
 - `docker ps` check the container is running
+- `terraform destroy` destroy the container
+
+## Setup and run GCP
+- `brew install --cask google-cloud-sdk` install the GCP SDK
+- `cd learn-terraform-gcp` change into the directory
+- `terraform init` initialise terraform
+- `terraform apply` apply the plan
+- `terraform graph | dot -Tsvg > graph.svg` graph the plan (requires [Graphviz](https://graphviz.org/download/))
+- `terraform show` show the plan
+- `terraform output` show the output
 - `terraform destroy` destroy the container
