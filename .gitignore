@@ -34,3 +34,4 @@ override.tf.json
 terraform.rc
 
 terraform-learning-386212-2d2a8d458005*
+.env

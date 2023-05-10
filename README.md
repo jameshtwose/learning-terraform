@@ -34,3 +34,18 @@ A repo of my attempts at learning terraform (starting with Docker).
 - `terraform show` show the plan
 - `terraform output` show the output
 - `terraform destroy` destroy the container
+
+## Setup and run azure
+- `brew install azure-cli` install the Azure CLI
+- `cd learn-terraform-azure` change into the directory
+- `az login` login to Azure
+- `az account list --output table` list the accounts
+- `az account set --subscription "<SUBSCRIPTION_ID>"` set the subscription (this is the "id" field that is returned when logging in)
+- `az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>"` create a service principal
+- `terraform init` initialise terraform
+- `terraform apply` apply the plan
+- `terraform fmt` format the plan
+- `terraform show` show the plan
+- `terraform plan` check the plan
+- `terraform state list` list the state
+- `terraform destroy` destroy the container
