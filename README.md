@@ -1,5 +1,5 @@
 # learning-terraform
-A repo of my attempts at learning terraform (starting with Docker).
+A repo of my attempts at learning terraform (Docker, GCP, azure, AWS).
 
 ## Install terraform (on macOS)
 - `brew tap hashicorp/tap` add the tap
