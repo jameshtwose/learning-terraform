@@ -1,15 +1,15 @@
 variable "project" {
-
+  default = "terraform-learning-386212"
 }
 
 variable "credentials_file" {
-
+  default = "terraform-learning-386212-4a789ecfa690.json"
 }
 
 variable "region" {
-  default = "us-central1"
+  default = "europe-west1"
 }
 
 variable "zone" {
-  default = "us-central1-c"
+  default = "europe-west1-c"
 }
